@@ -1,0 +1,115 @@
+.unit-card {
+    background-color: var(--color-bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    border: 1px solid rgba(126, 34, 206, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Softer shadow for light theme */
+}
+
+.unit-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(126, 34, 206, 0.15);
+    border-color: var(--color-purple);
+}
+
+.unit-image-wrapper {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.unit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.unit-card:hover .unit-image {
+    transform: scale(1.08);
+}
+
+.unit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.unit-card:hover .unit-overlay {
+    opacity: 1;
+}
+
+.unit-info {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.unit-info h3 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.unit-desc {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.unit-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(126, 34, 206, 0.1);
+    padding-top: 1.5rem;
+}
+
+.location-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    transition: var(--transition);
+}
+
+.location-link:hover {
+    color: var(--color-purple);
+}
+
+.details-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-purple);
+    font-weight: 600;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details-link:hover {
+    color: var(--color-purple-dark);
+    transform: translateX(5px);
+}
