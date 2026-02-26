@@ -1,11 +1,14 @@
 .header {
-    background-color: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: rgba(3, 0, 10, 0.7);
+    /* Extremely dark opacity */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(203, 164, 94, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    /* Subtle border */
     padding: 1rem 0;
 }
 
@@ -16,8 +19,8 @@
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 800;
     letter-spacing: 2px;
     color: var(--color-text);
     display: flex;
@@ -25,40 +28,29 @@
     gap: 0.5rem;
 }
 
-.logo-sparkle {
-    color: var(--color-gold);
-    animation: sparkle 2s infinite ease-in-out;
-}
-
-@keyframes sparkle {
-
-    0%,
-    100% {
-        opacity: 0.5;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-}
-
 .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
 .nav-link {
-    color: var(--color-text);
-    font-weight: 500;
+    color: var(--color-text-muted);
+    font-weight: 600;
     transition: var(--transition);
     font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-link:hover {
-    color: var(--color-gold);
+    color: var(--color-white);
+}
+
+.btn-pill {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+    border-radius: 50px;
 }
 
 .mobile-toggle {
@@ -73,18 +65,22 @@
     .nav-menu {
         position: fixed;
         top: 70px;
-        /* Header height */
         left: 0;
         width: 100%;
         height: calc(100vh - 70px);
         background-color: var(--color-bg);
         flex-direction: column;
-        padding: 2rem;
+        padding: 3rem 2rem;
         transform: translateX(100%);
         transition: var(--transition);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .nav-menu.active {
         transform: translateX(0);
+    }
+
+    .logo {
+        font-size: 1.5rem;
     }
 }

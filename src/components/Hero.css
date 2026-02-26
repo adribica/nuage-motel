@@ -1,35 +1,26 @@
 .hero {
     position: relative;
-    height: 95vh;
+    height: 100vh;
     min-height: 700px;
     display: flex;
     align-items: center;
-    /* Deep, rich, luxurious gradient */
-    background: radial-gradient(circle at 70% 30%, #4c1d95 0%, #0f0529 60%, #000000 100%);
+    background: radial-gradient(circle at 50% 100%, rgba(124, 58, 237, 0.15) 0%, var(--color-bg) 60%);
+    background-color: var(--color-bg);
     overflow: hidden;
 }
 
-/* Animated glow effect */
 .hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 60%);
-    animation: rotateGlow 20s linear infinite;
-    z-index: 1;
-}
-
-@keyframes rotateGlow {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Subtle texture overlaid on gradient */
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+    opacity: 0.03;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .hero-overlay {
@@ -38,9 +29,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
-    /* Cinematic vignette */
-    background: radial-gradient(circle at center, transparent 0%, #030014 90%);
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(3, 0, 10, 0.8) 0%, transparent 40%, rgba(3, 0, 10, 0.9) 100%);
 }
 
 .hero-content {
@@ -48,46 +38,38 @@
     z-index: 10;
     text-align: center;
     max-width: 900px;
-    padding: 3rem;
-    /* Glass effect container for text */
-    background: rgba(10, 5, 20, 0.4);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-title {
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     letter-spacing: -2px;
-    /* Gradient text */
-    background: linear-gradient(to right, #ffffff, #e9d5ff, #c084fc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+    color: var(--color-white);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
     display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--color-purple-neon);
-    letter-spacing: 6px;
-    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-purple-light);
+    letter-spacing: 2px;
     margin-top: 1rem;
-    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+    opacity: 0.9;
 }
 
 .hero-description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--color-text-muted);
-    margin-bottom: 3rem;
-    line-height: 1.8;
-    max-width: 700px;
+    margin-bottom: 3.5rem;
+    line-height: 1.6;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -97,15 +79,37 @@
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
-.hero-buttons .btn {
-    min-width: 180px;
+.cta-main .mr-2 {
+    margin-right: 0.5rem;
+}
+
+.hero-trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    opacity: 0.8;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.badge svg {
+    color: var(--color-purple-light);
 }
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .hero-subtitle {
@@ -113,17 +117,24 @@
     }
 
     .hero-description {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         width: 100%;
-        align-items: center;
+        max-width: 300px;
         gap: 1rem;
     }
 
     .hero-buttons .btn {
         width: 100%;
+    }
+
+    .hero-trust-badges {
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
     }
 }

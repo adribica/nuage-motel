@@ -1,47 +1,41 @@
 :root {
-  /* Premium Purple & Light Scheme */
-  --color-purple: #7e22ce;
-  --color-purple-dark: #3b0764;
-  --color-purple-light: #f3e8ff;
-  --color-purple-neon: #a855f7;
+  /* Premium Dark Theme */
+  --color-purple: #7C3AED;
+  --color-purple-dark: #4C1D95;
+  --color-purple-light: #A78BFA;
 
-  /* Neutrals for high-end look */
-  --color-bg: #fafafa;
-  --color-bg-card: #ffffff;
+  /* Neutrals for atmospheric dark look */
+  --color-bg: #03000A;
+  /* Extremely dark background */
+  --color-bg-card: rgba(12, 5, 25, 0.7);
+  /* Deep dark purple/black for cards */
+  --color-bg-blur: rgba(20, 10, 40, 0.4);
 
-  --color-text: #1a1a1a;
-  --color-text-muted: #555555;
-  --color-accent: #ffffff;
-  --color-white: #ffffff;
+  --color-text: #F3F4F6;
+  --color-text-muted: #9CA3AF;
+  --color-white: #FFFFFF;
 
-  --font-primary: 'Montserrat', sans-serif;
-  --border-radius: 16px;
-  --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --font-primary: 'Inter', sans-serif;
+  --border-radius: 20px;
+  /* 16px - 24px range */
+  --transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* 150-250ms ease-out */
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(126, 34, 206, 0.1);
-  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
-  /* Elegant shadow */
+  background: var(--color-bg-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  /* Deep soft shadow */
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-purple-dark) 0%, var(--color-purple) 100%);
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-purple-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.glow-purple {
-  box-shadow: 0 10px 30px rgba(126, 34, 206, 0.15);
-}
-
-.glow-hover:hover {
-  box-shadow: 0 15px 40px rgba(126, 34, 206, 0.25);
-  transform: translateY(-4px);
 }
 
 * {
@@ -61,7 +55,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease-out;
 }
 
 button {
@@ -74,8 +68,7 @@ button {
 img {
   max-width: 100%;
   display: block;
-  border-radius: 8px;
-  /* subtle default radius */
+  border-radius: 12px;
 }
 
 /* Utilities */
@@ -115,8 +108,7 @@ img {
   font-weight: 600;
   border-radius: 50px;
   transition: var(--transition);
-  letter-spacing: 0.5px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -125,28 +117,27 @@ img {
 .btn-primary {
   background: linear-gradient(135deg, var(--color-purple), var(--color-purple-dark));
   color: white;
-  box-shadow: 0 10px 20px rgba(126, 34, 206, 0.3);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+  /* Subtle glow */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 30px rgba(126, 34, 206, 0.4);
+  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.3);
   color: white;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary {
-  background: var(--color-white);
-  color: var(--color-purple-dark);
-  border: 1px solid rgba(126, 34, 206, 0.2);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .btn-secondary:hover {
-  background: var(--color-purple-light);
-  border-color: var(--color-purple);
-  color: var(--color-purple-dark);
-  box-shadow: 0 10px 25px rgba(126, 34, 206, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
 }
 
