@@ -16,7 +16,7 @@ const Hero = () => {
                 </p>
 
                 <div className="hero-buttons">
-                    <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-pill cta-main">
+                    <a href="https://wa.link/u34xsp" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-pill cta-main">
                         <MessageCircle size={20} className="mr-2" />
                         Conversar no WhatsApp
                     </a>
@@ -39,6 +39,10 @@ const Hero = () => {
                         <span>Reserva rápida</span>
                     </div>
                 </div>
+            </div>
+
+            <div className="scroll-indicator">
+                <span>Role para descobrir</span>
             </div>
         </section>
     );

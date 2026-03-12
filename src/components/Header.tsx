@@ -15,10 +15,10 @@ const Header = () => {
 
                 <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
                     <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Início</Link>
-                    <a href="#unidades" className="nav-link" onClick={() => setIsOpen(false)}>Unidades</a>
-                    <a href="#sobre" className="nav-link" onClick={() => setIsOpen(false)}>Sobre</a>
-                    <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm btn-pill">
-                        Conversar no WhatsApp
+                    <a href="/#unidades" className="nav-link" onClick={() => setIsOpen(false)}>Unidades</a>
+                    <a href="/#sobre" className="nav-link" onClick={() => setIsOpen(false)}>Experiência</a>
+                    <a href="https://wa.link/u34xsp" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm header-btn" onClick={() => setIsOpen(false)}>
+                        Agendar Agora
                     </a>
                 </nav>
 

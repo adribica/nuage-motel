@@ -20,7 +20,7 @@ const Home = () => {
                     </div>
 
                     <div className="units-grid">
-                        {units.slice(0, 3).map((unit) => (
+                        {units.map((unit) => (
                             <UnitCard key={unit.id} unit={unit} />
                         ))}
                     </div>
@@ -94,7 +94,7 @@ const Home = () => {
                     <img src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?q=80&w=600&auto=format&fit=crop" alt="Experiência 4" />
                 </div>
                 <div className="container center mt-4">
-                    <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-pill btn-sm">
+                    <a href="https://wa.link/u34xsp" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-pill btn-sm">
                         Falar no WhatsApp e reservar
                     </a>
                 </div>
@@ -148,7 +148,7 @@ const Home = () => {
                 <div className="container center cta-content">
                     <h2 className="cta-title">Pronto para viver a experiência NUAGE?</h2>
                     <p className="cta-desc">Chame no WhatsApp e veja disponibilidade nas nossas unidades.</p>
-                    <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-pill btn-lg mt-4">
+                    <a href="https://wa.link/u34xsp" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-pill btn-lg mt-4">
                         Conversar no WhatsApp
                     </a>
                 </div>

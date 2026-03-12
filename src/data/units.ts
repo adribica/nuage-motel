@@ -3,6 +3,8 @@ export interface Suite {
   priceCheckIn?: string;
   priceOvernight: string;
   features: string[];
+  imageUrl?: string;
+  images?: string[];
 }
 
 export interface Unit {
@@ -28,7 +30,7 @@ export const units: Unit[] = [
     slug: 'guararapes',
     locationUrl: 'https://maps.app.goo.gl/6KRW7t4zHHrRFuAC8', // Keeping existing if valid, otherwise can be updated later
     description: 'O auge da exclusividade no bairro Guararapes. Privacidade e requinte.',
-    imageUrl: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: 'https://i.postimg.cc/Sx5zMNBr/fotoguararapes.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -68,19 +70,22 @@ export const units: Unit[] = [
         name: 'Suíte Estrela',
         priceCheckIn: '2h — R$ 70,00',
         priceOvernight: 'R$ 140,00',
-        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Sistema de som']
+        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Sistema de som'],
+        imageUrl: 'https://i.postimg.cc/sg4B1Kdt/Estrela_Eusébio.avif'
       },
       {
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 60,00',
         priceOvernight: 'R$ 150,00',
-        features: ['Itens da Estrela', 'Banheiro aquecido', 'Luz de LED nãoite', 'Espelho']
+        features: ['Itens da Estrela', 'Banheiro aquecido', 'Luz de LED nãoite', 'Espelho'],
+        imageUrl: 'https://i.postimg.cc/FRD1GKsG/Lua_Eusébio.png'
       },
       {
         name: 'Suíte Sol',
         priceCheckIn: '4h — R$ 180,00',
         priceOvernight: 'R$ 250,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem']
+        features: ['Itens da Lua', 'Banheira de hidromassagem'],
+        imageUrl: 'https://i.postimg.cc/SKbXx5vL/Sol_Eusébio.png'
       }
     ]
   },
@@ -90,25 +95,33 @@ export const units: Unit[] = [
     slug: 'messejana',
     locationUrl: 'https://maps.app.goo.gl/3h3Dy26kouU3RxAG6',
     description: 'Localização estratégica em Fortaleza com suítes temáticas e discrição total.',
-    imageUrl: 'https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: 'https://i.postimg.cc/vBpsrCYB/motelmessajana.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
         priceCheckIn: '2h — R$ 70,00',
         priceOvernight: 'R$ 140,00',
-        features: featuresEstrela
+        features: featuresEstrela,
+        imageUrl: 'https://i.postimg.cc/rp9pFpWc/Estrela_Messajana.png'
       },
       {
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 60,00',
         priceOvernight: 'R$ 150,00',
-        features: featuresLua
+        features: featuresLua,
+        imageUrl: 'https://i.postimg.cc/qRbMyZj5/Lua_Messajana.png'
       },
       {
         name: 'Suíte Sol',
         priceCheckIn: '3h — R$ 180,00',
         priceOvernight: 'R$ 250,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem externa']
+        features: ['Itens da Lua', 'Banheira de hidromassagem externa'],
+        imageUrl: 'https://i.postimg.cc/wvTjtdcN/Sol_Messajana.png',
+        images: [
+          'https://i.postimg.cc/wvTjtdcN/Sol_Messajana.png',
+          'https://i.postimg.cc/cJWHS3vX/Sol_Messajana_2.png',
+          'https://i.postimg.cc/P5Yx9y5C/Sol_Messajana_3.png'
+        ]
       }
     ]
   },
@@ -118,25 +131,33 @@ export const units: Unit[] = [
     slug: 'joquei',
     locationUrl: 'https://maps.app.goo.gl/FEKNt93rMxfoSYHcA',
     description: 'Design moderno e ambiente sofisticado próximo ao Jóquei Clube.',
-    imageUrl: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: 'https://i.postimg.cc/ZYsx5bFr/Foto_Unidade_Joquei.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
         priceCheckIn: '2h — R$ 60,00',
         priceOvernight: 'R$ 120,00',
-        features: featuresEstrela
+        features: featuresEstrela,
+        imageUrl: 'https://i.postimg.cc/dt7DmwMm/Estrela_Joquei.png'
       },
       {
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 60,00',
         priceOvernight: 'R$ 130,00',
-        features: featuresLua
+        features: featuresLua,
+        imageUrl: 'https://i.postimg.cc/SNwRg3k0/Lua_Joquei.png'
       },
       {
         name: 'Suíte Sol',
         priceCheckIn: '3h — R$ 150,00',
         priceOvernight: 'R$ 250,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem externa']
+        features: ['Itens da Lua', 'Banheira de hidromassagem externa'],
+        imageUrl: 'https://i.postimg.cc/gjjj7Pxp/Sol_Joquei_1.png',
+        images: [
+          'https://i.postimg.cc/gjjj7Pxp/Sol_Joquei_1.png',
+          'https://i.postimg.cc/0j4jRHSw/Sol_Joquei_2.png',
+          'https://i.postimg.cc/h4ZfdhYt/Sol_Joquei_3.png'
+        ]
       }
     ]
   },
@@ -146,7 +167,7 @@ export const units: Unit[] = [
     slug: 'papicu',
     locationUrl: '#',
     description: 'A sofisticação do Papicu ao seu dispor.',
-    imageUrl: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: 'https://i.postimg.cc/YSPK7Tm9/motelpapicu.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -174,25 +195,32 @@ export const units: Unit[] = [
     slug: 'rodolfo-teofilo',
     locationUrl: '#',
     description: 'Conforto e discrição na região do Rodolfo Teófilo.',
-    imageUrl: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: 'https://i.postimg.cc/ht4HdKL7/motelrodolfoteofi.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
         priceCheckIn: '3h — R$ 70,00',
         priceOvernight: 'R$ 120,00',
-        features: featuresEstrela
+        features: featuresEstrela,
+        imageUrl: 'https://i.postimg.cc/3Nz8b0Mj/Estrela_Rodolfo.png'
       },
       {
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 60,00',
         priceOvernight: 'R$ 130,00',
-        features: featuresLua
+        features: featuresLua,
+        imageUrl: 'https://i.postimg.cc/7PRZLdCC/Lua_Rodolfo.png'
       },
       {
         name: 'Suíte Sol',
         priceCheckIn: '4h — R$ 120,00',
         priceOvernight: 'R$ 160,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem externa']
+        features: ['Itens da Lua', 'Banheira de hidromassagem externa'],
+        imageUrl: 'https://i.postimg.cc/7YTYJ97K/Sol_Rodolfo.png',
+        images: [
+          'https://i.postimg.cc/7YTYJ97K/Sol_Rodolfo.png',
+          'https://i.postimg.cc/vm74gzJJ/Sol_Rodolfo_2.png'
+        ]
       }
     ]
   },
@@ -208,7 +236,8 @@ export const units: Unit[] = [
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 60,00',
         priceOvernight: 'R$ 130,00',
-        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Som', 'Banheiro aquecido', 'Espelho']
+        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Som', 'Banheiro aquecido', 'Espelho'],
+        imageUrl: 'https://i.postimg.cc/kG2McFHX/Lua_Rogaciano.png'
       }
     ]
   },

@@ -11,10 +11,11 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-links">
-                    <h3>Links Rápidos</h3>
-                    <a href="#unidades">Unidades</a>
-                    <a href="#sobre">Sobre e Experiência</a>
-                    <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer">Reservas</a>
+                    <h4>Links Rápidos</h4>
+                    <a href="/#unidades">Unidades</a>
+                    <a href="/#sobre">Sobre o Nuage</a>
+                    <a href="https://wa.link/u34xsp" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
+                    <a href="#">Trabalhe Conosco</a>
                 </div>
 
                 <div className="footer-social">

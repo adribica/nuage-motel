@@ -26,6 +26,9 @@ const UnitPage = () => {
                 <div className="suites-grid">
                     {unit.suites.map((suite, index) => (
                         <div key={index} className="suite-card">
+                            {suite.imageUrl && (
+                                <div className="suite-image" style={{ backgroundImage: `url(${suite.imageUrl})` }}></div>
+                            )}
                             <h3 className="suite-name">{suite.name}</h3>
                             <div className="suite-prices">
                                 {suite.priceCheckIn && (
@@ -44,7 +47,7 @@ const UnitPage = () => {
                                     <li key={idx}><Check size={16} color="#7e22ce" /> {feature}</li>
                                 ))}
                             </ul>
-                            <a href={`https://wa.me/5585999999999?text=Olá, gostaria de reservar a ${suite.name} no ${unit.name}`}
+                            <a href="https://wa.link/u34xsp"
                                 target="_blank" rel="noopener noreferrer" className="btn btn-primary full-width">
                                 Reservar esta Suíte
                             </a>
