@@ -24,68 +24,40 @@ const featuresSol = ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV sma
 const featuresNuage = ['3 ambientes', 'Piscina externa', 'Boate com pole dance', 'Globo de luz', 'Sistema de som', 'Suíte principal separada'];
 
 export const units: Unit[] = [
+  // --- Unidades com fotos reais ---
   {
-    id: 'guararapes',
-    name: 'NUAGE Guararapes',
-    slug: 'guararapes',
-    locationUrl: 'https://maps.app.goo.gl/6KRW7t4zHHrRFuAC8', // Keeping existing if valid, otherwise can be updated later
-    description: 'O auge da exclusividade no bairro Guararapes. Privacidade e requinte.',
-    imageUrl: 'https://i.postimg.cc/Sx5zMNBr/fotoguararapes.jpg',
+    id: 'joquei',
+    name: 'NUAGE Jóquei',
+    slug: 'joquei',
+    locationUrl: 'https://maps.app.goo.gl/FEKNt93rMxfoSYHcA',
+    description: 'Design moderno e ambiente sofisticado próximo ao Jóquei Clube.',
+    imageUrl: 'https://i.postimg.cc/ZYsx5bFr/Foto_Unidade_Joquei.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
-        priceCheckIn: '3h — R$ 70,00',
+        priceCheckIn: '2h — R$ 60,00',
         priceOvernight: 'R$ 120,00',
-        features: featuresEstrela
+        features: featuresEstrela,
+        imageUrl: 'https://i.postimg.cc/dt7DmwMm/Estrela_Joquei.png'
       },
       {
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 60,00',
         priceOvernight: 'R$ 130,00',
-        features: featuresLua
+        features: featuresLua,
+        imageUrl: 'https://i.postimg.cc/SNwRg3k0/Lua_Joquei.png'
       },
       {
         name: 'Suíte Sol',
-        priceCheckIn: '4h — R$ 120,00',
-        priceOvernight: 'R$ 160,00',
-        features: featuresSol
-      },
-      {
-        name: 'Suíte Nuage',
-        priceCheckIn: '4h — R$ 250,00',
-        priceOvernight: 'R$ 400,00',
-        features: featuresNuage
-      }
-    ]
-  },
-  {
-    id: 'eusebio',
-    name: 'NUAGE Eusébio',
-    slug: 'eusebio',
-    locationUrl: 'https://maps.app.goo.gl/6bR4E3gfywX5sr4G8',
-    description: 'Suítes com luxo e conforto no Eusébio, perfeitas para momentos inesquecíveis.',
-    imageUrl: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1000&auto=format&fit=crop',
-    suites: [
-      {
-        name: 'Suíte Estrela',
-        priceCheckIn: '2h — R$ 70,00',
-        priceOvernight: 'R$ 140,00',
-        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Sistema de som'],
-        imageUrl: 'https://i.postimg.cc/sg4B1Kdt/Estrela_Eusébio.avif'
-      },
-      {
-        name: 'Suíte Lua',
-        priceCheckIn: '3h — R$ 60,00',
-        priceOvernight: 'R$ 150,00',
-        features: ['Itens da Estrela', 'Banheiro aquecido', 'Luz de LED nãoite', 'Espelho'],
-        imageUrl: 'https://i.postimg.cc/FRD1GKsG/Lua_Eusébio.png'
-      },
-      {
-        name: 'Suíte Sol',
-        priceCheckIn: '4h — R$ 180,00',
+        priceCheckIn: '3h — R$ 150,00',
         priceOvernight: 'R$ 250,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem'],
-        imageUrl: 'https://i.postimg.cc/SKbXx5vL/Sol_Eusébio.png'
+        features: ['Itens da Lua', 'Banheira de hidromassagem externa'],
+        imageUrl: 'https://i.postimg.cc/gjjj7Pxp/Sol_Joquei_1.png',
+        images: [
+          'https://i.postimg.cc/gjjj7Pxp/Sol_Joquei_1.png',
+          'https://i.postimg.cc/0j4jRHSw/Sol_Joquei_2.png',
+          'https://i.postimg.cc/h4ZfdhYt/Sol_Joquei_3.png'
+        ]
       }
     ]
   },
@@ -126,70 +98,6 @@ export const units: Unit[] = [
     ]
   },
   {
-    id: 'joquei',
-    name: 'NUAGE Jóquei',
-    slug: 'joquei',
-    locationUrl: 'https://maps.app.goo.gl/FEKNt93rMxfoSYHcA',
-    description: 'Design moderno e ambiente sofisticado próximo ao Jóquei Clube.',
-    imageUrl: 'https://i.postimg.cc/ZYsx5bFr/Foto_Unidade_Joquei.jpg',
-    suites: [
-      {
-        name: 'Suíte Estrela',
-        priceCheckIn: '2h — R$ 60,00',
-        priceOvernight: 'R$ 120,00',
-        features: featuresEstrela,
-        imageUrl: 'https://i.postimg.cc/dt7DmwMm/Estrela_Joquei.png'
-      },
-      {
-        name: 'Suíte Lua',
-        priceCheckIn: '3h — R$ 60,00',
-        priceOvernight: 'R$ 130,00',
-        features: featuresLua,
-        imageUrl: 'https://i.postimg.cc/SNwRg3k0/Lua_Joquei.png'
-      },
-      {
-        name: 'Suíte Sol',
-        priceCheckIn: '3h — R$ 150,00',
-        priceOvernight: 'R$ 250,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem externa'],
-        imageUrl: 'https://i.postimg.cc/gjjj7Pxp/Sol_Joquei_1.png',
-        images: [
-          'https://i.postimg.cc/gjjj7Pxp/Sol_Joquei_1.png',
-          'https://i.postimg.cc/0j4jRHSw/Sol_Joquei_2.png',
-          'https://i.postimg.cc/h4ZfdhYt/Sol_Joquei_3.png'
-        ]
-      }
-    ]
-  },
-  {
-    id: 'papicu',
-    name: 'NUAGE Papicu',
-    slug: 'papicu',
-    locationUrl: '#',
-    description: 'A sofisticação do Papicu ao seu dispor.',
-    imageUrl: 'https://i.postimg.cc/YSPK7Tm9/motelpapicu.jpg',
-    suites: [
-      {
-        name: 'Suíte Estrela',
-        priceCheckIn: '3h — R$ 70,00',
-        priceOvernight: 'R$ 120,00',
-        features: featuresEstrela
-      },
-      {
-        name: 'Suíte Lua',
-        priceCheckIn: '3h — R$ 60,00',
-        priceOvernight: 'R$ 130,00',
-        features: featuresLua
-      },
-      {
-        name: 'Suíte Sol',
-        priceCheckIn: '4h — R$ 150,00',
-        priceOvernight: 'R$ 250,00',
-        features: ['Itens da Lua', 'Banheira de hidromassagem externa']
-      }
-    ]
-  },
-  {
     id: 'rodolfo-teofilo',
     name: 'NUAGE Rodolfo Teófilo',
     slug: 'rodolfo-teofilo',
@@ -225,12 +133,107 @@ export const units: Unit[] = [
     ]
   },
   {
+    id: 'guararapes',
+    name: 'NUAGE Guararapes',
+    slug: 'guararapes',
+    locationUrl: 'https://maps.app.goo.gl/6KRW7t4zHHrRFuAC8',
+    description: 'O auge da exclusividade no bairro Guararapes. Privacidade e requinte.',
+    imageUrl: 'https://i.postimg.cc/Sx5zMNBr/fotoguararapes.jpg',
+    suites: [
+      {
+        name: 'Suíte Estrela',
+        priceCheckIn: '3h — R$ 70,00',
+        priceOvernight: 'R$ 120,00',
+        features: featuresEstrela
+      },
+      {
+        name: 'Suíte Lua',
+        priceCheckIn: '3h — R$ 60,00',
+        priceOvernight: 'R$ 130,00',
+        features: featuresLua
+      },
+      {
+        name: 'Suíte Sol',
+        priceCheckIn: '4h — R$ 120,00',
+        priceOvernight: 'R$ 160,00',
+        features: featuresSol
+      },
+      {
+        name: 'Suíte Nuage',
+        priceCheckIn: '4h — R$ 250,00',
+        priceOvernight: 'R$ 400,00',
+        features: featuresNuage
+      }
+    ]
+  },
+  {
+    id: 'papicu',
+    name: 'NUAGE Papicu',
+    slug: 'papicu',
+    locationUrl: '#',
+    description: 'A sofisticação do Papicu ao seu dispor.',
+    imageUrl: 'https://i.postimg.cc/YSPK7Tm9/motelpapicu.jpg',
+    suites: [
+      {
+        name: 'Suíte Estrela',
+        priceCheckIn: '3h — R$ 70,00',
+        priceOvernight: 'R$ 120,00',
+        features: featuresEstrela
+      },
+      {
+        name: 'Suíte Lua',
+        priceCheckIn: '3h — R$ 60,00',
+        priceOvernight: 'R$ 130,00',
+        features: featuresLua
+      },
+      {
+        name: 'Suíte Sol',
+        priceCheckIn: '4h — R$ 150,00',
+        priceOvernight: 'R$ 250,00',
+        features: ['Itens da Lua', 'Banheira de hidromassagem externa']
+      }
+    ]
+  },
+
+  // --- Unidades com fotos geradas pela IA ---
+  {
+    id: 'eusebio',
+    name: 'NUAGE Eusébio',
+    slug: 'eusebio',
+    locationUrl: 'https://maps.app.goo.gl/6bR4E3gfywX5sr4G8',
+    description: 'Suítes com luxo e conforto no Eusébio, perfeitas para momentos inesquecíveis.',
+    imageUrl: '/images/units/eusebio.png',
+    suites: [
+      {
+        name: 'Suíte Estrela',
+        priceCheckIn: '2h — R$ 70,00',
+        priceOvernight: 'R$ 140,00',
+        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Sistema de som'],
+        imageUrl: 'https://i.postimg.cc/sg4B1Kdt/Estrela_Eusébio.avif'
+      },
+      {
+        name: 'Suíte Lua',
+        priceCheckIn: '3h — R$ 60,00',
+        priceOvernight: 'R$ 150,00',
+        features: ['Itens da Estrela', 'Banheiro aquecido', 'Luz de LED nãoite', 'Espelho'],
+        imageUrl: 'https://i.postimg.cc/FRD1GKsG/Lua_Eusébio.png'
+      },
+      {
+        name: 'Suíte Sol',
+        priceCheckIn: '4h — R$ 180,00',
+        priceOvernight: 'R$ 250,00',
+        features: ['Itens da Lua', 'Banheira de hidromassagem'],
+        imageUrl: 'https://i.postimg.cc/SKbXx5vL/Sol_Eusébio.png'
+      }
+    ]
+  },
+  {
     id: 'rogaciano-leite',
     name: 'NUAGE Rogaciano Leite',
     slug: 'rogaciano-leite',
     locationUrl: '#',
     description: 'Sua melhor escolha na Av. Rogaciano Leite.',
-    imageUrl: 'https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '/images/units/rogaciano.png',
     suites: [
       {
         name: 'Suíte Lua',
@@ -247,7 +250,7 @@ export const units: Unit[] = [
     slug: 'siqueira',
     locationUrl: '#',
     description: 'Momentos especiais com o melhor custo-benefício no Siqueira.',
-    imageUrl: 'https://images.unsplash.com/photo-1549480017-d76466a4b7e8?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '/images/units/siqueira.png',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -269,7 +272,7 @@ export const units: Unit[] = [
     slug: 'matriz',
     locationUrl: '#',
     description: 'A essência do NUAGE em nossa matriz.',
-    imageUrl: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '/images/units/matriz.png',
     suites: [
       {
         name: 'Suíte Estrela',
