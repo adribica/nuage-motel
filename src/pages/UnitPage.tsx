@@ -55,15 +55,6 @@ const UnitPage = () => {
                     ))}
                 </div>
 
-                <div className="gallery-section">
-                    <h2>Galeria</h2>
-                    <div className="gallery-grid">
-                        <img src={unit.imageUrl} alt={unit.name} />
-                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600&auto=format&fit=crop" alt="Interior" />
-                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=600&auto=format&fit=crop" alt="Detalhe" />
-                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=600&auto=format&fit=crop" alt="Ambiente" />
-                    </div>
-                </div>
             </div>
         </div>
     );

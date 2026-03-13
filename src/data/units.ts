@@ -31,7 +31,7 @@ export const units: Unit[] = [
     slug: 'joquei',
     locationUrl: 'https://maps.app.goo.gl/FEKNt93rMxfoSYHcA',
     description: 'Design moderno e ambiente sofisticado próximo ao Jóquei Clube.',
-    imageUrl: 'https://i.postimg.cc/ZYsx5bFr/Foto_Unidade_Joquei.jpg',
+    imageUrl: '/images/units/joquei_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -202,7 +202,7 @@ export const units: Unit[] = [
     slug: 'eusebio',
     locationUrl: 'https://maps.app.goo.gl/6bR4E3gfywX5sr4G8',
     description: 'Suítes com luxo e conforto no Eusébio, perfeitas para momentos inesquecíveis.',
-    imageUrl: '/images/units/eusebio.png',
+    imageUrl: '/images/units/eusebio_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -233,7 +233,7 @@ export const units: Unit[] = [
     slug: 'rogaciano-leite',
     locationUrl: '#',
     description: 'Sua melhor escolha na Av. Rogaciano Leite.',
-    imageUrl: '/images/units/rogaciano.png',
+    imageUrl: '/images/units/rogaciano_hq.png',
     suites: [
       {
         name: 'Suíte Lua',
@@ -250,7 +250,7 @@ export const units: Unit[] = [
     slug: 'siqueira',
     locationUrl: '#',
     description: 'Momentos especiais com o melhor custo-benefício no Siqueira.',
-    imageUrl: '/images/units/siqueira.png',
+    imageUrl: '/images/units/siqueira_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -272,7 +272,7 @@ export const units: Unit[] = [
     slug: 'matriz',
     locationUrl: '#',
     description: 'A essência do NUAGE em nossa matriz.',
-    imageUrl: '/images/units/matriz.png',
+    imageUrl: '/images/units/matriz_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
