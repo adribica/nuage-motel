@@ -228,28 +228,11 @@ export const units: Unit[] = [
     ]
   },
   {
-    id: 'rogaciano-leite',
-    name: 'NUAGE Rogaciano Leite',
-    slug: 'rogaciano-leite',
+    id: 'antonio-bezerra',
+    name: 'NUAGE Antônio Bezerra',
+    slug: 'antonio-bezerra',
     locationUrl: '#',
-    description: 'Sua melhor escolha na Av. Rogaciano Leite.',
-    imageUrl: '/images/units/rogaciano_hq.png',
-    suites: [
-      {
-        name: 'Suíte Lua',
-        priceCheckIn: '3h — R$ 60,00',
-        priceOvernight: 'R$ 130,00',
-        features: ['Garagem privativa', 'Ar condicionado', 'Frigobar', 'TV smart', 'Som', 'Banheiro aquecido', 'Espelho'],
-        imageUrl: 'https://i.postimg.cc/kG2McFHX/Lua_Rogaciano.png'
-      }
-    ]
-  },
-  {
-    id: 'siqueira',
-    name: 'NUAGE Siqueira',
-    slug: 'siqueira',
-    locationUrl: '#',
-    description: 'Momentos especiais com o melhor custo-benefício no Siqueira.',
+    description: 'A sua nova opção de conforto no bairro Antônio Bezerra.',
     imageUrl: '/images/units/siqueira_hq.png',
     suites: [
       {
@@ -262,28 +245,6 @@ export const units: Unit[] = [
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 59,90',
         priceOvernight: 'R$ 119,90',
-        features: featuresLua
-      }
-    ]
-  },
-  {
-    id: 'matriz',
-    name: 'NUAGE Matriz',
-    slug: 'matriz',
-    locationUrl: '#',
-    description: 'A essência do NUAGE em nossa matriz.',
-    imageUrl: '/images/units/matriz_hq.png',
-    suites: [
-      {
-        name: 'Suíte Estrela',
-        priceCheckIn: '2h — R$ 40,00',
-        priceOvernight: 'R$ 100,00',
-        features: featuresEstrela
-      },
-      {
-        name: 'Suíte Lua',
-        priceCheckIn: '3h — R$ 60,00',
-        priceOvernight: 'R$ 120,00',
         features: featuresLua
       }
     ]
