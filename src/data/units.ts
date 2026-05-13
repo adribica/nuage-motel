@@ -67,7 +67,7 @@ export const units: Unit[] = [
     slug: 'messejana',
     locationUrl: 'https://maps.app.goo.gl/3h3Dy26kouU3RxAG6',
     description: 'Localização estratégica em Fortaleza com suítes temáticas e discrição total.',
-    imageUrl: 'https://i.postimg.cc/vBpsrCYB/motelmessajana.jpg',
+    imageUrl: '/images/units/messejana_hq.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
