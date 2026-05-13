@@ -237,8 +237,8 @@ export const units: Unit[] = [
     suites: [
       {
         name: 'Suíte Estrela',
-        priceCheckIn: '2h — R$ 49,90',
-        priceOvernight: 'R$ 99,90',
+        priceCheckIn: '2h — R$ 50,00',
+        priceOvernight: 'R$ 120,00',
         features: featuresEstrela,
         imageUrl: '/images/units/antonio_bezerra_estrela_2.jpg',
         images: [
@@ -248,8 +248,8 @@ export const units: Unit[] = [
       },
       {
         name: 'Suíte Lua',
-        priceCheckIn: '3h — R$ 59,90',
-        priceOvernight: 'R$ 119,90',
+        priceCheckIn: '2h — R$ 65,00',
+        priceOvernight: 'R$ 130,00',
         features: featuresLua,
         imageUrl: '/images/units/antonio_bezerra_lua_4.jpg',
         images: [
@@ -262,8 +262,8 @@ export const units: Unit[] = [
       },
       {
         name: 'Suíte Sol',
-        priceCheckIn: '3h — R$ 89,90',
-        priceOvernight: 'R$ 149,90',
+        priceCheckIn: '3h — R$ 75,00',
+        priceOvernight: 'R$ 150,00',
         features: featuresSol,
         imageUrl: '/images/units/antonio_bezerra_sol_2.jpg',
         images: [
@@ -273,8 +273,8 @@ export const units: Unit[] = [
       },
       {
         name: 'Suíte Nuage',
-        priceCheckIn: '4h — R$ 129,90',
-        priceOvernight: 'R$ 199,90',
+        priceCheckIn: '3h — R$ 90,00',
+        priceOvernight: 'R$ 180,00',
         features: featuresNuage,
         imageUrl: '/images/units/antonio_bezerra_nuage_1.jpg',
         images: [
