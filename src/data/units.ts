@@ -233,19 +233,56 @@ export const units: Unit[] = [
     slug: 'antonio-bezerra',
     locationUrl: '#',
     description: 'A sua nova opção de conforto no bairro Antônio Bezerra.',
-    imageUrl: '/images/units/siqueira_hq.png',
+    imageUrl: '/images/units/antonio_bezerra_hq.jpg',
     suites: [
       {
         name: 'Suíte Estrela',
         priceCheckIn: '2h — R$ 49,90',
         priceOvernight: 'R$ 99,90',
-        features: featuresEstrela
+        features: featuresEstrela,
+        imageUrl: '/images/units/antonio_bezerra_estrela_2.jpg',
+        images: [
+          '/images/units/antonio_bezerra_estrela_2.jpg',
+          '/images/units/antonio_bezerra_estrela_1.jpg'
+        ]
       },
       {
         name: 'Suíte Lua',
         priceCheckIn: '3h — R$ 59,90',
         priceOvernight: 'R$ 119,90',
-        features: featuresLua
+        features: featuresLua,
+        imageUrl: '/images/units/antonio_bezerra_lua_4.jpg',
+        images: [
+          '/images/units/antonio_bezerra_lua_4.jpg',
+          '/images/units/antonio_bezerra_lua_2.jpg',
+          '/images/units/antonio_bezerra_lua_3.jpg',
+          '/images/units/antonio_bezerra_lua_1.jpg',
+          '/images/units/antonio_bezerra_lua_5.jpg'
+        ]
+      },
+      {
+        name: 'Suíte Sol',
+        priceCheckIn: '3h — R$ 89,90',
+        priceOvernight: 'R$ 149,90',
+        features: featuresSol,
+        imageUrl: '/images/units/antonio_bezerra_sol_2.jpg',
+        images: [
+          '/images/units/antonio_bezerra_sol_2.jpg',
+          '/images/units/antonio_bezerra_sol_1.jpg'
+        ]
+      },
+      {
+        name: 'Suíte Nuage',
+        priceCheckIn: '4h — R$ 129,90',
+        priceOvernight: 'R$ 199,90',
+        features: featuresNuage,
+        imageUrl: '/images/units/antonio_bezerra_nuage_1.jpg',
+        images: [
+          '/images/units/antonio_bezerra_nuage_1.jpg',
+          '/images/units/antonio_bezerra_nuage_2.jpg',
+          '/images/units/antonio_bezerra_nuage_3.jpg',
+          '/images/units/antonio_bezerra_nuage_4.jpg'
+        ]
       }
     ]
   }
