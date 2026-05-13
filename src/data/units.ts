@@ -103,7 +103,7 @@ export const units: Unit[] = [
     slug: 'rodolfo-teofilo',
     locationUrl: '#',
     description: 'Conforto e discrição na região do Rodolfo Teófilo.',
-    imageUrl: 'https://i.postimg.cc/ht4HdKL7/motelrodolfoteofi.jpg',
+    imageUrl: '/images/units/rodolfo_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -138,7 +138,7 @@ export const units: Unit[] = [
     slug: 'guararapes',
     locationUrl: 'https://maps.app.goo.gl/6KRW7t4zHHrRFuAC8',
     description: 'O auge da exclusividade no bairro Guararapes. Privacidade e requinte.',
-    imageUrl: 'https://i.postimg.cc/Sx5zMNBr/fotoguararapes.jpg',
+    imageUrl: '/images/units/guararapes_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
@@ -172,7 +172,7 @@ export const units: Unit[] = [
     slug: 'papicu',
     locationUrl: '#',
     description: 'A sofisticação do Papicu ao seu dispor.',
-    imageUrl: 'https://i.postimg.cc/YSPK7Tm9/motelpapicu.jpg',
+    imageUrl: '/images/units/papicu_hq.png',
     suites: [
       {
         name: 'Suíte Estrela',
